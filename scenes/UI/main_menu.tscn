@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7ocqm0mmrlwp"]
+[gd_scene load_steps=5 format=3 uid="uid://c7ocqm0mmrlwp"]
 
 [ext_resource type="TileSet" uid="uid://dbgfvyo2782sy" path="res://resources/tileset.tres" id="1_g45kv"]
 [ext_resource type="Script" path="res://scenes/UI/main_menu.gd" id="1_lt14l"]
 [ext_resource type="PackedScene" uid="uid://imq7rg8wgpai" path="res://scenes/UI/sound_button.tscn" id="2_bo0fx"]
+[ext_resource type="PackedScene" uid="uid://b8bjfj7v8ib6h" path="res://scenes/UI/vignette.tscn" id="2_nuq3i"]
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource("1_lt14l")
@@ -38,6 +39,7 @@ size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer2/VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
 theme_override_font_sizes/font_size = 32
 text = "Arena Survivors
 "
@@ -56,3 +58,6 @@ text = "Options"
 unique_name_in_owner = true
 layout_mode = 2
 text = "Quit"
+
+[node name="Vignette" parent="." instance=ExtResource("2_nuq3i")]
+layer = 2
