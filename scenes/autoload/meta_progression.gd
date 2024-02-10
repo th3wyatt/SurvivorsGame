@@ -11,7 +11,7 @@ var save_data: Dictionary = {
 func _ready():
 	GameEvents.experience_vial_collected.connect(on_experience_collected)
 	load_save_file()
-
+	save_data["meta_upgrade_currency"] = 10000
 
 func load_save_file():
 	if !FileAccess.file_exists(SAVE_FILE_PATH):
@@ -32,6 +32,7 @@ func add_meta_upgrade(upgrade: MetaUpgrade):
 		}
 		
 	save_data["meta_upgrades"][upgrade.id]["quantity"] += 1
+	print("Upgrade Count: ", save_data["meta_upgrades"])
 	save()
 
 
