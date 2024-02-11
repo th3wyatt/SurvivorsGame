@@ -2,7 +2,7 @@ extends Node
 
 
 const BASE_RANGE = 100
-const BASE_DAMAGE = 15
+const BASE_DAMAGE = 30
 
 @export var anvil_ability_scene:PackedScene
 

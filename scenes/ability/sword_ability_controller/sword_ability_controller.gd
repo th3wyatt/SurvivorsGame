@@ -4,7 +4,7 @@ const MAX_RANGE = 150
 
 @export var sword_ability:PackedScene
 
-var base_damage = 5
+var base_damage = 10
 var additional_damage_percent = 1 
 var base_wait_time
 
