@@ -32,5 +32,6 @@ func on_options_pressed():
 func on_quit_pressed():
 	get_tree().quit()
 
+
 func on_options_closed(options_instance: Node):
 	options_instance.queue_free()
