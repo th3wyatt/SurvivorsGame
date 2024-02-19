@@ -80,6 +80,7 @@ func spawn_boss():
 	entities_layer.add_child(enemy)
 	enemy.global_position = get_tree().get_first_node_in_group("player").global_position
 	enemy.global_position += Vector2(0, 20)
+	boss_spawned = true
 
 func on_arena_difficulty_increased(arena_difficulty: int):
 	var time_off = (.1 / 12) * arena_difficulty
