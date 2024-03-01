@@ -7,8 +7,8 @@ var is_moving = false
 
 
 func _ready():
+	add_to_group("enemy")
 	$HurtBoxComponent.hit.connect(on_hit)
-
 
 func _process(delta):
 	if is_moving:

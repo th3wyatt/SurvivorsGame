@@ -101,7 +101,6 @@ sprite = NodePath("../Visuals/Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 position = Vector2(0, -7)
-scale = Vector2(1, 1)
 texture = ExtResource("8_2hjrx")
 
 [node name="HurtBoxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("9_f6m6i")]
