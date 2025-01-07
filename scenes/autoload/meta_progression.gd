@@ -45,4 +45,3 @@ func get_upgrade_count(upgrade_id: String):
 func on_experience_collected(number):
 	save_data["meta_upgrade_currency"] += number
 	
-
