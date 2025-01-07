@@ -5,6 +5,7 @@ extends CharacterBody2D
 
 
 func _ready():
+	add_to_group("enemy")
 	$HurtBoxComponent.hit.connect(on_hit)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
